@@ -1,0 +1,138 @@
+@import '../reset/reset.scss';
+
+.wrapperSystem {
+    padding-top: 200px;
+    width: 100%;
+    height: 150vh;
+    background-color: #11193a;
+    transition: opacity 0.5s ease-in-out;
+
+    &.active .ballRight{
+        animation: moveBallRight 1.5s forwards;
+    }
+
+    &.active .ballLeft{
+        animation: moveBallLeft 1.5s forwards;
+    }
+
+    &.active .ballTop{
+        animation: moveBallTop 1.5s forwards;
+    }
+
+    h2{
+        text-align: center;
+        color: #fff;
+        font-size: 54px;
+        margin-bottom: 110px;
+    }
+
+    .systemContainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        .ballContainer{
+            width: 80%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+
+        .circle{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 110px;
+            height: 105px;
+            border: 5px solid #b52545;
+            border-radius: 50%;
+            background-color: #11193a;
+
+            .ball{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 75px;
+                height: 75px;
+                padding: 30px;
+                background-color: #3a84bf;
+                border-radius: 50%;
+                transition: opacity 0.5s ease-in-out;
+            }
+
+            .ballLeft, .ballRight, .ballTop{
+                img{
+                    width: 60px;
+                }
+            }
+        }
+    }
+
+    .js{
+        img{
+            border-radius: 20%;
+        }
+    }
+
+    .bcOne, .bcFive{
+        justify-content: space-around;
+    }
+
+    .bcTwo, .bcFour{
+        justify-content: space-between;
+    }
+
+    .bcThree{
+        justify-content: space-around;
+    }
+
+        ul li{
+            color: #fff;
+        }
+    }
+}
+
+@keyframes moveBallRight {
+    from {
+        transform: translateX(100vh);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveBallLeft {
+    from {
+        transform: translateX(-100vh); 
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveBallTop {
+    from {
+        transform: translateY(-100vh); /* Déplacer la balle vers le haut de l'écran */
+        opacity: 0; /* Rendre la balle invisible */
+    }
+    to {
+        transform: translateY(0); /* Rétablir la position de la balle */
+        opacity: 1; /* Rendre la balle visible */
+    }
+}
+
+@media (max-width: 1025px){
+    .wrapperSystem{
+        height: 100vh;
+    }
+}
+
+@media (max-width: 768px){
+    .wrapperSystem{
+        height: 145vh;
+    }
+}

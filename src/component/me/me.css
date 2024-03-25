@@ -1,0 +1,43 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.meWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  width: 100%;
+}
+.meWrapper h2 {
+  color: #fff;
+  font-size: 108px;
+  margin-bottom: 20px;
+}
+.meWrapper p {
+  color: #fff;
+  width: 70%;
+  font-size: 34px;
+  text-align: center;
+}
+
+@media (max-width: 1025px) {
+  .meWrapper h2 {
+    font-size: 81px;
+    text-align: center;
+  }
+  .meWrapper p {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .meWrapper h2 {
+    font-size: 54px;
+  }
+  .meWrapper p {
+    font-size: 17px;
+  }
+}/*# sourceMappingURL=me.css.map */

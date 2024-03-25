@@ -1,0 +1,124 @@
+@charset "UTF-8";
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.wrapperSystem {
+  padding-top: 200px;
+  width: 100%;
+  height: 150vh;
+  background-color: #11193a;
+}
+.wrapperSystem h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 54px;
+  margin-bottom: 150px;
+}
+.wrapperSystem .systemContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.wrapperSystem .systemContainer .ballContainer {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.wrapperSystem .systemContainer .ballContainer .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border: 5px solid #b52545;
+  border-radius: 50%;
+  background-color: #11193a;
+}
+.wrapperSystem .systemContainer .ballContainer .circle .ball {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 75px;
+  padding: 30px;
+  background-color: #3a84bf;
+  border-radius: 50%;
+  transition: opacity 0.5s ease-in-out;
+}
+.wrapperSystem .systemContainer .ballContainer .circle .two, .wrapperSystem .systemContainer .ballContainer .circle .four, .wrapperSystem .systemContainer .ballContainer .circle .seven, .wrapperSystem .systemContainer .ballContainer .circle .nine, .wrapperSystem .systemContainer .ballContainer .circle .eleven {
+  animation: moveBallRight 1.5s forwards;
+}
+.wrapperSystem .systemContainer .ballContainer .circle .one, .wrapperSystem .systemContainer .ballContainer .circle .three, .wrapperSystem .systemContainer .ballContainer .circle .five, .wrapperSystem .systemContainer .ballContainer .circle .eight, .wrapperSystem .systemContainer .ballContainer .circle .ten {
+  animation: moveBallLeft 1.5s forwards;
+}
+.wrapperSystem .systemContainer .ballContainer .circle .six {
+  animation: moveBallTop 1.5s forwards;
+}
+.wrapperSystem .systemContainer .ballContainer .circle .one img, .wrapperSystem .systemContainer .ballContainer .circle .four img, .wrapperSystem .systemContainer .ballContainer .circle .five img, .wrapperSystem .systemContainer .ballContainer .circle .six img, .wrapperSystem .systemContainer .ballContainer .circle .seven img, .wrapperSystem .systemContainer .ballContainer .circle .eight img, .wrapperSystem .systemContainer .ballContainer .circle .nine img, .wrapperSystem .systemContainer .ballContainer .circle .ten img, .wrapperSystem .systemContainer .ballContainer .circle .eleven img {
+  width: 60px;
+}
+.wrapperSystem .systemContainer .ballContainer .circle .two img {
+  width: 50px;
+}
+.wrapperSystem .systemContainer .ballContainer .circle .three img {
+  width: 80px;
+  border-radius: 50%;
+}
+.wrapperSystem .systemContainer .bcOne, .wrapperSystem .systemContainer .bcFive {
+  justify-content: space-around;
+}
+.wrapperSystem .systemContainer .bcTwo, .wrapperSystem .systemContainer .bcFour {
+  justify-content: space-between;
+}
+.wrapperSystem .systemContainer .bcThree {
+  justify-content: space-around;
+}
+.wrapperSystem .systemContainer ul li {
+  color: #fff;
+}
+
+@keyframes moveBallRight {
+  from {
+    transform: translateX(100vh);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes moveBallLeft {
+  from {
+    transform: translateX(-100vh);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes moveBallTop {
+  from {
+    transform: translateY(-100vh); /* Déplacer la balle vers le haut de l'écran */
+    opacity: 0; /* Rendre la balle invisible */
+  }
+  to {
+    transform: translateY(0); /* Rétablir la position de la balle */
+    opacity: 1; /* Rendre la balle visible */
+  }
+}
+@media (max-width: 1025px) {
+  .wrapperSystem {
+    height: 100vh;
+  }
+}
+@media (max-width: 768px) {
+  .wrapperSystem {
+    height: 125vh;
+  }
+}/*# sourceMappingURL=system.css.map */

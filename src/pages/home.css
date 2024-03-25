@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Archiv";
+  src: url("../assets/font/ArchivGroteskTrial-RegularTrial.otf") format("opentype");
+}
+@font-face {
+  font-family: "Inconsolata";
+  src: url("../assets/font/Inconsolata/Inconsolata-VariableFont_wdth,wght.ttf") format("truetype");
+}
+h1, h2 {
+  font-family: "Archiv", sans-serif; /* Fallback to sans-serif if Archiv is unavailable */
+}
+
+p, li {
+  font-family: "Inconsolata", monospace; /* Fallback to monospace if Inconsolata is unavailable */
+}/*# sourceMappingURL=home.css.map */

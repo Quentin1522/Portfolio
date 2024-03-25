@@ -1,0 +1,52 @@
+@import '../reset/reset.scss';
+
+.meWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    width: 100%;
+
+
+    h2{
+        color: #fff;
+        font-size: 108px;
+        margin-bottom: 20px;
+    }
+
+    p{
+        color: #fff;
+        width: 70%;
+        font-size: 34px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1025px){
+    .meWrapper{
+
+        h2{
+            font-size: 81px;
+            text-align: center;
+        }
+
+        p{
+            font-size: 30px;
+        }
+    }
+}
+
+
+@media (max-width: 768px){
+    .meWrapper{
+
+        h2{
+            font-size: 54px;
+        }
+
+        p{
+            font-size: 17px;
+        }
+    }
+}

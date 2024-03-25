@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Gudea';
+    src: url('../assets/font/Gudea\,Inconsolata\,PT_Mono/') format('opentype');
+}
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('../assets/font/Inconsolata/Inconsolata-VariableFont_wdth,wght.ttf') format('truetype');
+}
+
+h1, h2 {
+    font-family: 'Gudea', sans-serif; /* Fallback to sans-serif if Archiv is unavailable */
+}
+
+p, li {
+    font-family: 'Inconsolata', monospace; /* Fallback to monospace if Inconsolata is unavailable */
+}

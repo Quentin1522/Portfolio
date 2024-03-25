@@ -1,0 +1,65 @@
+@import '../reset/reset.scss';
+
+.navWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 70%;
+    background-image: url("../../assets/blurry-gradient.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid 2px #eee;
+    border-radius: 50px;
+
+        .navMenu{
+            display: flex;
+            flex-direction: row;
+            gap: 70px;
+
+        li{
+            color: #fff;
+            list-style: none;
+
+            a {
+                display: block;
+                text-decoration: none;
+                color: #fff;
+                transition: transform 0.5s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.5);
+                }
+        }
+    }
+  }
+}
+
+@media (max-width: 1025px){
+    .navWrapper{
+        margin-right: 40px;
+
+        .navMenu{
+
+            li{
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .navWrapper{
+    height: auto;
+    margin: 0;
+    order: 2;
+    padding: 10px;
+    width: 100%;
+
+    .navMenu{
+        text-align: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+}
