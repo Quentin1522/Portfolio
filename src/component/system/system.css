@@ -10,12 +10,22 @@
   width: 100%;
   height: 150vh;
   background-color: #11193a;
+  transition: opacity 0.5s ease-in-out;
+}
+.wrapperSystem.active .ballRight {
+  animation: moveBallRight 1.5s forwards;
+}
+.wrapperSystem.active .ballLeft {
+  animation: moveBallLeft 1.5s forwards;
+}
+.wrapperSystem.active .ballTop {
+  animation: moveBallTop 1.5s forwards;
 }
 .wrapperSystem h2 {
   text-align: center;
   color: #fff;
   font-size: 54px;
-  margin-bottom: 150px;
+  margin-bottom: 110px;
 }
 .wrapperSystem .systemContainer {
   display: flex;
@@ -33,8 +43,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 105px;
   border: 5px solid #b52545;
   border-radius: 50%;
   background-color: #11193a;
@@ -50,24 +60,16 @@
   border-radius: 50%;
   transition: opacity 0.5s ease-in-out;
 }
-.wrapperSystem .systemContainer .ballContainer .circle .two, .wrapperSystem .systemContainer .ballContainer .circle .four, .wrapperSystem .systemContainer .ballContainer .circle .seven, .wrapperSystem .systemContainer .ballContainer .circle .nine, .wrapperSystem .systemContainer .ballContainer .circle .eleven {
-  animation: moveBallRight 1.5s forwards;
-}
-.wrapperSystem .systemContainer .ballContainer .circle .one, .wrapperSystem .systemContainer .ballContainer .circle .three, .wrapperSystem .systemContainer .ballContainer .circle .five, .wrapperSystem .systemContainer .ballContainer .circle .eight, .wrapperSystem .systemContainer .ballContainer .circle .ten {
-  animation: moveBallLeft 1.5s forwards;
-}
-.wrapperSystem .systemContainer .ballContainer .circle .six {
-  animation: moveBallTop 1.5s forwards;
-}
-.wrapperSystem .systemContainer .ballContainer .circle .one img, .wrapperSystem .systemContainer .ballContainer .circle .four img, .wrapperSystem .systemContainer .ballContainer .circle .five img, .wrapperSystem .systemContainer .ballContainer .circle .six img, .wrapperSystem .systemContainer .ballContainer .circle .seven img, .wrapperSystem .systemContainer .ballContainer .circle .eight img, .wrapperSystem .systemContainer .ballContainer .circle .nine img, .wrapperSystem .systemContainer .ballContainer .circle .ten img, .wrapperSystem .systemContainer .ballContainer .circle .eleven img {
+.wrapperSystem .systemContainer .ballContainer .circle .ballLeft img, .wrapperSystem .systemContainer .ballContainer .circle .ballRight img, .wrapperSystem .systemContainer .ballContainer .circle .ballTop img {
   width: 60px;
 }
-.wrapperSystem .systemContainer .ballContainer .circle .two img {
-  width: 50px;
+.wrapperSystem .systemContainer .circleCenter {
+  width: 30%;
+  justify-content: space-around;
+  display: flex;
 }
-.wrapperSystem .systemContainer .ballContainer .circle .three img {
-  width: 80px;
-  border-radius: 50%;
+.wrapperSystem .systemContainer .js img {
+  border-radius: 20%;
 }
 .wrapperSystem .systemContainer .bcOne, .wrapperSystem .systemContainer .bcFive {
   justify-content: space-around;
@@ -116,9 +118,17 @@
   .wrapperSystem {
     height: 100vh;
   }
+  .wrapperSystem .circleCenter {
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 @media (max-width: 768px) {
   .wrapperSystem {
-    height: 125vh;
+    height: 145vh;
   }
 }/*# sourceMappingURL=system.css.map */

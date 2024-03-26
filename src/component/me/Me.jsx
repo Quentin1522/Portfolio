@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import '../me/me.scss';
+import github from "../../assets/github.png";
 
 const Me = () => {
     //état pour stocker le titre animé
@@ -45,6 +46,12 @@ const Me = () => {
         <div className="meWrapper">
             <h2>{animatedTitle}</h2>
             <p>{animatedText}</p>
+            <div className="git">
+                <p>Pour voir mes différents projets ! </p>
+                <a href="https://github.com/Quentin1522">
+                <img className='github' src={github} alt='logo github' />
+                </a>            
+            </div>
         </div>
     );
 };

@@ -68,6 +68,13 @@
         }
     }
 
+    .circleCenter{
+        width: 30%;
+        justify-content: space-around;
+        display: flex;
+    }
+
+
     .js{
         img{
             border-radius: 20%;
@@ -128,6 +135,15 @@
 @media (max-width: 1025px){
     .wrapperSystem{
         height: 100vh;
+
+        .circleCenter{
+            width: 30%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
     }
 }
 

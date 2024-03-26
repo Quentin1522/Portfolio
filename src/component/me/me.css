@@ -23,6 +23,21 @@
   font-size: 34px;
   text-align: center;
 }
+.meWrapper .git {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50px;
+  width: 65%;
+  height: 10%;
+  background-image: url("../../assets/blurry-gradient.png");
+  border-radius: 50px;
+  border: solid 2px #eee;
+  padding: 2px;
+}
+.meWrapper .git img {
+  width: 50px;
+}
 
 @media (max-width: 1025px) {
   .meWrapper h2 {
