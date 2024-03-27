@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'Gudea';
     src: url('../assets/font/Gudea\,Inconsolata\,PT_Mono/') format('opentype');
@@ -9,7 +10,7 @@
 }
 
 h1, h2 {
-    font-family: 'Gudea', sans-serif; /* Fallback to sans-serif if Archiv is unavailable */
+    font-family: 'Gudea', sans-serif; /* Fallback to sans-serif if Gudea is unavailable */
 }
 
 p, li {
