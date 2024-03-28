@@ -34,7 +34,7 @@ const Me = () => {
             } else {
                 clearInterval(textIntervalId);
             }
-        }, 50);//vitesse pour le texte (ajustez selon vos besoins)
+        }, 20);//vitesse pour le texte
 
         return () => {
             clearInterval(titleIntervalId);

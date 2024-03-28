@@ -49,12 +49,14 @@ const Projet = () => {
                     <p className="titleProject">P 8</p>
                 </div>
 
-                <div className="card tilt-card">
-                    <div className="cardHover">
-                        <p className="decripProject"></p>
-                    </div> 
-                    <p className="titleProject">P 11</p>
-                </div>
+                {/* 
+    <div className="card tilt-card">
+        <div className="cardHover">
+            <p className="decripProject"></p>
+        </div> 
+        <p className="titleProject">P 11</p>
+    </div>
+*/}
             </div>
         </div>
     );
