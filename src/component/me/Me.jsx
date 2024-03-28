@@ -9,7 +9,7 @@ const Me = () => {
 
     //état pour stocker le texte animé
     const [animatedText, setAnimatedText] = useState('');
-    const originalText = "Passionnée par l'informatique, les jeux-vidéo, j'ai commencé à étudier le développement web en 2019, j'ai suivi une première formation, puis suivi celle d'OpenClassrooms.";
+    const originalText = "Passionné par l'informatique, les jeux vidéo, j'ai commencé à étudier le développement web en 2019, j'ai suivi une première formation, puis j'ai continué avec celle d'OpenClassrooms.";
 
     //effet qui démarre l'animation
     useEffect(() => {
@@ -47,7 +47,7 @@ const Me = () => {
             <h2>{animatedTitle}</h2>
             <p>{animatedText}</p>
             <div className="git">
-                <p>Pour voir mes différents projets ! </p>
+                <p>Pour voir mes réalisations ! </p>
                 <a href="https://github.com/Quentin1522">
                 <img className='github' src={github} alt='logo github' />
                 </a>            

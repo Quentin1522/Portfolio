@@ -30,9 +30,10 @@ const Projet = () => {
                 <div className="card tilt-card">
                     <div className="cardHover">
                         <p className="decripProject">
-                            Projet ayant pour objectif d'interagir avec une API "swagger", 
-                            et de travailler le JavaScript pour afficher et filtrer les projets en provenance de l'API.
-                            Il est également possible d'ajouter ou de supprimer un projet. L'ajout de projet permet de mettre une image, un titre et une catégorie pour les filtres.
+                        Projet ayant pour objectif d'interagir avec une API "swagger", 
+                            et de travailler le JavaScript pour afficher et filtrer les travaux en provenance de l'API.
+                            Il est également possible d'ajouter ou de supprimer un projet. L'ajout de travaux permet de mettre une image, un titre et une catégorie pour les filtres.
+
                         </p>
                     </div>
                     <p className="titleProject">P 6</p>
