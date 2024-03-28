@@ -62,9 +62,15 @@
 
             .ballLeft, .ballRight, .ballTop{
                 img{
-                    width: 60px;
+                    width:70px;
                 }
             }
+
+                .css{
+                    img{
+                        width: 50px;
+                    }
+                }
         }
     }
 
@@ -74,12 +80,12 @@
         display: flex;
     }
 
-
     .js{
         img{
             border-radius: 20%;
         }
     }
+
 
     .bcOne, .bcFive{
         justify-content: space-around;
