@@ -1,16 +1,14 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import "../src/App.scss";
-import process from 'process';
 
 function App() {
-    const basename = process.env.NODE_ENV === "production" ? "/Portfolio/" : "/";
 
     return (
         <div>
-            <BrowserRouter basename={basename}>
+            <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/Portfolio/" element={<Home />} />
                 </Routes>
             </BrowserRouter>
         </div>
