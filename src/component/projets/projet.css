@@ -105,4 +105,9 @@
     width: 80%;
     margin-bottom: 50px;
   }
+}
+@media (max-width: 768px) {
+  .wrapperProjet {
+    height: 150vh;
+  }
 }/*# sourceMappingURL=projet.css.map */

@@ -61,7 +61,10 @@
   transition: opacity 0.5s ease-in-out;
 }
 .wrapperSystem .systemContainer .ballContainer .circle .ballLeft img, .wrapperSystem .systemContainer .ballContainer .circle .ballRight img, .wrapperSystem .systemContainer .ballContainer .circle .ballTop img {
-  width: 60px;
+  width: 70px;
+}
+.wrapperSystem .systemContainer .ballContainer .circle .css img {
+  width: 50px;
 }
 .wrapperSystem .systemContainer .circleCenter {
   width: 30%;
@@ -129,6 +132,6 @@
 }
 @media (max-width: 768px) {
   .wrapperSystem {
-    height: 145vh;
+    height: 170vh;
   }
 }/*# sourceMappingURL=system.css.map */

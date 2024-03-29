@@ -64,13 +64,17 @@
 }
 
 @media (max-width: 1025px){
-  .containerSocial{
-    a{
-      text-align: center;
-      img{
-        width: 40%;
-        border-radius: 50%;
-        border: #000 1px solid;
+  .wrapperFooter{
+    padding-top: 150px;
+    height: 80vh;
+    .containerSocial{
+      a{
+        text-align: center;
+        img{
+          width: 40%;
+          border-radius: 50%;
+          border: #000 1px solid;
+        }
       }
     }
   }
@@ -79,7 +83,6 @@
 @media (max-width: 768px){
   .wrapperFooter{
     height: 100vh;
-
     .containerSocial{
       flex-direction: column;
       height: 60vh;
@@ -94,4 +97,4 @@
       width: 51%;
     }
   }
-}
+  }
