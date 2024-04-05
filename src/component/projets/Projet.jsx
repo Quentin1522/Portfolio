@@ -1,5 +1,6 @@
 import "../projets/projet.scss";
 import "../projets/vanilla";
+import LogoGit from "../../assets/github.png";
 
 
 const Projet = () => {
@@ -15,8 +16,7 @@ const Projet = () => {
             <h2>Projets réalisés</h2>
             <div className="containerCard">
 
-                <a href="https://github.com/Quentin1522/Projet-4-OhMyFood">
-                <div className="card tilt-card">
+               <div className="card tilt-card">
                     <div className="cardHover">
                         <p className="decripProject">
                             Projet ayant pour objectif d'intégrer une maquette en 
@@ -25,12 +25,15 @@ const Projet = () => {
                             Il s'agit d'un site permettant au restaurateur de proposer leurs menus sur la plateforme.
                         </p>
                     </div>
-                    <p className="titleProject">P 4</p>
+                    <div className="title-link">
+                    <p className="titleProject">P4 OhMyFood</p>
+                    <a href="https://github.com/Quentin1522/Projet-4-OhMyFood">
+                        <img src={LogoGit} alt="logo github"/>
+                    </a>
+                    </div>
                 </div>
-                </a>
 
-               <a href="https://github.com/Quentin1522/Projet-6-Sophie-Bluel">
-               <div className="card tilt-card">
+                <div className="card tilt-card">
                     <div className="cardHover">
                         <p className="decripProject">
                         Projet ayant pour objectif d'interagir avec une API "swagger", 
@@ -38,13 +41,15 @@ const Projet = () => {
                             Il est également possible d'ajouter ou de supprimer un projet. L'ajout de travaux permet de mettre une image, un titre et une catégorie pour les filtres.
                         </p>
                     </div>
-                    <p className="titleProject">P 6</p>
+                    <div className="title-link">
+                    <p className="titleProject">P6 Sophie Bluel</p>
+                    <a href="https://github.com/Quentin1522/Projet-6-Sophie-Bluel">
+                        <img src={LogoGit} alt="logo github"/>
+                    </a>
+                    </div>
                 </div>
 
-               </a>
-
-               <a href="https://github.com/Quentin1522/Projet-8-Kasa">
-               <div className="card tilt-card">
+                <div className="card tilt-card">
                     <div className="cardHover">
                         <p className="decripProject">
                             Projet ayant pour objectif de développer une plateforme de location de bien immobilier, 
@@ -52,9 +57,13 @@ const Projet = () => {
                             et de communiquer avec un fichier JSON, pour récupérer les données relatives au logement que propose la plateforme.
                         </p>
                     </div>
-                    <p className="titleProject">P 8</p>
+                    <div className="title-link">
+                    <p className="titleProject">P8 Kasa</p>
+                    <a href="https://github.com/Quentin1522/Projet-8-Kasa">
+                        <img src={LogoGit} alt="logo github"/>
+                    </a>
+                    </div>
                 </div>
-               </a>
 
                 {/* 
     <div className="card tilt-card">
