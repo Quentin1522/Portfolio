@@ -14,7 +14,8 @@ const Projet = () => {
         <div id="project" className="wrapperProjet">
             <h2>Projets réalisés</h2>
             <div className="containerCard">
-                
+
+                <a href="https://github.com/Quentin1522/Projet-4-OhMyFood">
                 <div className="card tilt-card">
                     <div className="cardHover">
                         <p className="decripProject">
@@ -26,20 +27,24 @@ const Projet = () => {
                     </div>
                     <p className="titleProject">P 4</p>
                 </div>
+                </a>
 
-                <div className="card tilt-card">
+               <a href="https://github.com/Quentin1522/Projet-6-Sophie-Bluel">
+               <div className="card tilt-card">
                     <div className="cardHover">
                         <p className="decripProject">
                         Projet ayant pour objectif d'interagir avec une API "swagger", 
                             et de travailler le JavaScript pour afficher et filtrer les travaux en provenance de l'API.
                             Il est également possible d'ajouter ou de supprimer un projet. L'ajout de travaux permet de mettre une image, un titre et une catégorie pour les filtres.
-
                         </p>
                     </div>
                     <p className="titleProject">P 6</p>
                 </div>
 
-                <div className="card tilt-card">
+               </a>
+
+               <a href="https://github.com/Quentin1522/Projet-8-Kasa">
+               <div className="card tilt-card">
                     <div className="cardHover">
                         <p className="decripProject">
                             Projet ayant pour objectif de développer une plateforme de location de bien immobilier, 
@@ -49,6 +54,7 @@ const Projet = () => {
                     </div>
                     <p className="titleProject">P 8</p>
                 </div>
+               </a>
 
                 {/* 
     <div className="card tilt-card">
