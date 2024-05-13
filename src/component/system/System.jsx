@@ -102,6 +102,12 @@ const System = () => {
                     </div>
 
                     <div className="circle">
+                        <div className="ballTop npm">
+                            <img src={npm} alt="logo npm"/>
+                        </div>
+                    </div> 
+
+                    <div className="circle">
                         <div className="ballTop github">
                             <img src={github} alt="logo github"/>
                         </div>
@@ -114,20 +120,6 @@ const System = () => {
                             <img src={redux} alt="logo redux"/>
                         </div>
                     </div> 
-                </div>
-
-                <div className="ballContainer bcFour">
-                    <div className="circle">
-                        <div className="ballLeft node">
-                            <img src={node} alt="logo node"/>
-                        </div>
-                    </div>     
-                    
-                    <div className="circle">
-                        <div className="ballRight npm">
-                            <img src={npm} alt="logo npm"/>
-                        </div>
-                    </div>   
                 </div>
 
                 <div className="ballContainer bcFive">
