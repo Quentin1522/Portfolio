@@ -45,13 +45,16 @@
   background-image: url("../../assets/blurry-gradient.png");
   border-radius: 50px;
   border: solid 2px #eee;
-  padding: 2px;
+  padding: 2px 200px;
 }
 .meWrapper .git img {
   width: 80px;
 }
 
 @media (max-width: 1025px) {
+  .meWrapper .git {
+    padding: 2px;
+  }
   .meWrapper h2 {
     font-size: 81px;
     text-align: center;
@@ -68,6 +71,7 @@
 }
 @media (max-width: 768px) {
   .meWrapper .git {
+    padding: 2px;
     width: 100%;
   }
   .meWrapper h2 {

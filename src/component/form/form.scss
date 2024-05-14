@@ -1,0 +1,96 @@
+form{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    .bloc{
+      width: 90%;
+      position: relative;
+      margin-bottom: 20px;
+
+      label{
+        display: block;
+        color: #b52545;
+        font-size: 24px;
+        margin-bottom: 8px;
+      }
+
+      .input-cover{
+        position: relative;
+        height: 38px;
+        width: 100%;
+      }
+
+      .input-background{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #b52545;
+        z-index: 1;
+      }
+
+      .hidden-input{
+        position: absolute;
+        top :0px;
+        left: 0px;
+        width: 100%;
+        opacity: 0;
+        height: 38px;
+        z-index: 2;
+      }
+
+      input, textarea{
+        width: 100%;
+        background-color: #11193a;
+        border: none;
+        border-bottom: #b52545 2px solid;
+        color: #fff;
+
+        &:focus{
+            outline: none;
+        }
+      }
+
+      textarea{
+        min-height: 115px;
+
+        resize: vertical;
+      }
+
+    }
+
+    .submit{
+      background-image: url("../../assets/blurry-gradient.png");
+      color: #fff;
+      border-radius: 10px;
+      border: none;
+      min-width: 244px;
+      height: 50px;
+      font-size: 16px;
+      cursor: pointer;
+
+      &:hover{
+        opacity: 0.8;
+      }
+    }
+  }
+
+  @keyframes zoom-in-out{
+    0%, 100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(4.5);
+    }
+  }
+
+  .letter-animate{
+    color: #fff;
+    display: inline-block;
+    animation: zoom-in-out 0.2s ease;
+    white-space: pre-wrap; 
+  }
