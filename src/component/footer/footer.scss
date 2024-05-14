@@ -40,6 +40,7 @@
         justify-content: center;
         align-items: center;
         width: 100%;
+        margin-top: 30px;
 
         .linkContent{
           display: flex;
@@ -84,6 +85,7 @@
         flex-direction: column;
 
         .contentContact{
+          margin-top: 0px;
           flex-direction: column;
 
           .linkContent{
@@ -96,6 +98,7 @@
           .bar{
             height: 2px;
             width: 90%;
+            margin: 30px 0 0 0;
           }
         }
       }

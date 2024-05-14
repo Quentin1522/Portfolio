@@ -37,7 +37,8 @@ form .bloc .hidden-input {
   width: 100%;
   opacity: 0;
   height: 38px;
-  z-index: 2;
+  z-index: 10;
+  pointer-events: auto;
 }
 form .bloc input, form .bloc textarea {
   width: 100%;
