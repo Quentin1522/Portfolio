@@ -65,10 +65,15 @@ const Me = () => {
             <h3>{animatedSecondTitle}</h3>
             <p>{animatedText}</p>
             <div className="git">
-                <a href='https://github.com/Quentin1522'>Pour voir mes réalisations !</a>
-                <a href="https://github.com/Quentin1522">
-                <img className='github' src={github} alt='logo github' />
-                </a>            
+                <div className='blockLink'>
+                    <a className='textLink' href='https://github.com/Quentin1522'>Pour voir mes réalisations !</a>
+                </div>
+
+                <div className='blockLink'>
+                    <a href="https://github.com/Quentin1522">
+                        <img className='github' src={github} alt='logo github' />
+                    </a>     
+                </div>       
             </div>
         </div>
     );

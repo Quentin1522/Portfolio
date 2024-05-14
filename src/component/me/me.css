@@ -39,13 +39,19 @@
 .meWrapper .git {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   margin-top: 50px;
-  width: 60%;
+  width: 62%;
   height: 15%;
   background-image: url("../../assets/blurry-gradient.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 50px;
-  border: solid 2px #eee;
-  padding: 2px 200px;
+  border: solid 3px #eee;
+  padding: 2px;
+}
+.meWrapper .git .textLink {
+  align-items: center;
 }
 .meWrapper .git img {
   width: 80px;
