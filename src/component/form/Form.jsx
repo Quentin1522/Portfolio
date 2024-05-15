@@ -2,26 +2,17 @@ import { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import '../form/form.scss';
 
-function AnimatedInput({ name, label, type = "text", value = '', onChange }) {
+function SimpleInput({ name, label, type = "text", value = '', onChange }) {
     return (
         <div className="bloc">
             <label htmlFor={name}>{label}</label>
-            <div className="input-cover">
-                <div className="input-background"></div>
-                {value.split('').map((char, index) => (
-                    <span key={index} className="letter-animate">
-                        {char === ' ' ? '\u00A0' : char}
-                    </span>
-                ))}
-                <input
-                    className="hidden-input"
-                    id={name}
-                    name={name}
-                    type={type}
-                    value={value}
-                    onChange={onChange}
-                />
-            </div>
+            <input
+                id={name}
+                name={name}
+                type={type}
+                value={value}
+                onChange={onChange}
+            />
         </div>
     );
 }
@@ -54,10 +45,11 @@ function Form() {
     if (state.succeeded) {
         return <p>Votre message a été envoyé avec succès !</p>;
     }
+    (handleEmailChange);
 
     return (
         <form className="form" onSubmit={handleSubmit}>
-            <AnimatedInput
+            <SimpleInput
                 name="email"
                 label="Email :"
                 type="email"
@@ -66,7 +58,7 @@ function Form() {
             />
             {emailError && <p className='validation-erreur'>{emailError}</p>}
             
-            <AnimatedInput
+            <SimpleInput
                 name="objet"
                 label="Objet :"
                 value={objet}
