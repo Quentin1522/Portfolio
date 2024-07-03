@@ -8,7 +8,7 @@ import react from "../../assets/react.png";
 import github from "../../assets/github.png";
 import vite from "../../assets/vite.png";
 import redux from "../../assets/redux.png";
-import node from "../../assets/node.svg.png";
+import typescript from "../../assets/typescript.svg";
 import npm from "../../assets/npm.png";
 import notion from "../../assets/notion.png";
 import figma from "../../assets/figma.png";
@@ -100,6 +100,12 @@ const System = () => {
                             <img src={react} alt="logo react"/>
                         </div>
                     </div>
+
+                    <div className="circle">
+                        <div className="ballTop typescript">
+                            <img src={typescript} alt="logo typescript"/>
+                        </div>
+                    </div> 
 
                     <div className="circle">
                         <div className="ballTop npm">
