@@ -103,7 +103,7 @@ const System = () => {
 
                     <div className="circle">
                         <div className="ballTop typescript">
-                            <img src={typescript} alt="logo typescript"/>
+                            <img src={typescript} alt="logo typeScript"/>
                         </div>
                     </div> 
 
